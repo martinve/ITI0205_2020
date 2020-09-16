@@ -9,6 +9,10 @@ h1 {
 }
 
 .red-green {
-	color: red; 
+	color: #dff; 
 	text-decoration-color: green;
+
+
+	border: 1px solid red;
 }
+
