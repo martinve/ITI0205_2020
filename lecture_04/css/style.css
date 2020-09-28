@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/subset-HelveticaNeueMedium.woff') format('woff'),
+		url('../fonts/subset-HelveticaNeueMedium.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+
+
+body {
+	font-family: 'HelveticaNeue', serif;
+	font-size: 62.5%;
+}
+
+
+.box {
+	background: orange;
+	width: 50vw;	
+	height: 25vh;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: gray;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+}

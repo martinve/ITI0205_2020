@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 1em;
+}
+
+
+p {
+	margin: 1em 0;
+}
+
+input {
+	font-size: 24px;
+	padding: 4px 8px;
+	border-radius: 0;
+	border-width: 1px;
+}
+
+h2 {
+	margin: 1em 0;
+}
+
+.button {
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	font-size: 16px;
+	padding: 10px 8px;
+}
+
+
+.results {
+	margin-top: 1rem;
+	list-style: none;
+	font-size: 1em;
+}
+
+
+.result {
+    font-size: 1.5em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.lose {
+	color: #ef2b86;
+}
+
+.win {
+	color: #4CAF50;
+}	

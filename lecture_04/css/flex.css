@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #ccc;
+	height: 100%;
+}
+
+h1 {
+	margin:.5em 0;
+}
+
+
+.container {
+	height: 100%;
+	border: 2px dotted red;
+}
+
+
+.content {
+	flex-wrap: nowrap;
+}
+
+
+.text {
+	border: 2px solid green;
+	margin: 10px;
+	width: 200px;
+
+
+}
+
+
+.box {
+	width: 100px;
+	height: 100px;
+	background: orange;
+}
+
+
+
+
+.flex {
+	display: flex;
+}
+
+.centered {
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.contented {
+	/*
+	Kopeerin siia kokku text & content CSSi
+	*/
+}

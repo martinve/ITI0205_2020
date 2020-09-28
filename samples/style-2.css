@@ -1,0 +1,18 @@
+body {
+	background: lilac;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+
+.bg-photo {
+	background: url("pilt.png") no-repeat;
+	background-size: cover;
+}
+
+
+<body class="bg-white"
+
+<body class="bg-white bg-photo"
