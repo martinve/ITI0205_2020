@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Skriptide katsetamine</title>
+    <meta enctype="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<script>
+
+
+
+
+		let tudeng = {
+			name: "Mati",
+			result: "max",
+			courses: [
+				'Veebirakendused',
+				'Algoritmid ja andmestruktuurid',
+			],
+			greet: function() { console.log('tere') } 
+		};
+
+
+		class Student {
+
+			constructor(age) {
+				this.age = age;
+				this.name = "Mati";
+				this.result = "Max";
+				this.courses = [
+					'Veebirakendused',
+					'Algoritmid ja andmestruktuurid',
+				];
+			}	
+
+			greet() {
+				console.log(this.age);
+				console.log(this.name + ' ütleb tere' )
+			}
+
+		}
+
+
+
+		let student = new Student(24);
+		student.greet();
+
+
+		let grade = 100;
+
+
+		if (grade > 51) {
+			console.log("Success");
+		} else {
+			console.log("Fail");
+		}
+
+
+
+		for(let i = 0; i < 13; i++) {
+			console.log(i);
+		}
+
+		console.log("-----");
+
+		student.courses.forEach(course => {
+			console.log(course);
+		});
+
+
+
+		i = 0;
+		while(i < 10) {
+			console.log("Loobime: " + i);
+			//i++;
+		}
+		console.log("tehtud");
+
+
+
+	</script>	
+
+
+</body>
+</html>

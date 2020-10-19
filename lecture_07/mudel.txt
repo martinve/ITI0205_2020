@@ -1,0 +1,3 @@
+[Dice|roll()]5-[Turn]
+[Turn]-[Game]
+[Score]->[Game]

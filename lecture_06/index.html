@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mängime Javascriptiga</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<h1>Number guessing game</h1>
+
+	<p id="instructions"></p>
+
+	<input type="number" id="user-guess" step="1" min="1" value="4" max="100">
+
+	<button class="button" onclick="makeGuess()">Make a guess!</button>
+
+	<h2>Your guesses:</h2>
+	<ul class="results" id="result-list"></ul>		
+
+	<div class="result" id="game-result"></h2>
+
+	<script src="js/game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	background: #eee;
+}
+
+
+.dice {
+	display: flex;
+}
+
+
+.die {
+	width: 128px;
+	height: 128px;
+	background: url('../img/die.png') no-repeat;
+}
+
+
+.d1 { background-position: 0 0; }
+.d2 { background-position: -128px 0; }
+
+.d3 {
+	background-position: -256px 0;
+}
+
+.d4 {
+	background-position: -384px 0;
+}
+
+
+.d5 {
+	background-position: -512px 0;
+}
+
+
+.d6 {
+	background-position: -640px 0;
+}
+
