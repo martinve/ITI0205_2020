@@ -1,0 +1,19 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+    <h1>Add New Studio</h1>
+
+    <form method="post">
+        <input type="hidden" name="action" value="add">
+
+        <div class="field required">
+            <label>Name:</label>
+            <input type="text" name="name" value="{{ post.name }}">
+        </div>
+
+        <div class="field">
+            <input type="submit" class="button" value="Add new game">
+        </div>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+<div class="field required">
+    <label>Name:</label>
+    <input type="text" name="name" required="required" value="{{ game.name }}">
+</div>
+
+<div class="field required">
+    <label>Metacritic URL:</label>
+    <input type="text" name="metacritic_url" required="required" value="{{ game.metacritic_url }}">
+</div>
+
+<div class="field">
+    <label>Studio:</label>
+    <select name="studios">
+        <option>---</option>
+        {% for item in studios %}
+            <option value="{{ item.id }} {{ game.studio_id == item.id ? 'selected' : '' }}">{{ item.name }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<div class="field">
+    <label>Genre:</label>
+    <select name="genre">
+        <option>---</option>
+        {% for item in genres %}
+            <option value="{{ item.id }}" {{ game.genre_id == item.id ? 'selected' : '' }}>{{ item.name }}</option>
+        {% endfor %}
+    </select>
+</div>
+

@@ -1,0 +1,13 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+    <h1>Welcome to the Page</h1>
+
+    <div class="games--list">
+    {% for game in games %}
+        <div class="card card--fixed-width">
+            <h2>{{ game.name }}</h2>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

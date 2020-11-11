@@ -1,0 +1,17 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+    <h1>Edit Game</h1>
+
+    <form method="post">
+        <input type="hidden" name="action" value="edit_game">
+        <input type="hidden" name="game_id" value="{{ game_id }}">
+
+        {% include('components/game_form.twig') %}
+
+        <div class="field">
+            <input type="submit" class="button" value="Edit Game">
+        </div>
+    </form>
+
+{% endblock %}

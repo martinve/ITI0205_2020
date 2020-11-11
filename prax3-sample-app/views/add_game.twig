@@ -1,0 +1,35 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+    <h1>Add New Game</h1>
+
+    <form method="post">
+        <input type="hidden" name="action" value="add_game">
+        <div class="field required">
+            <label>Name:</label>
+            <input type="text" name="name" required="required" value="{{ post.name }}">
+        </div>
+        <div class="field">
+            <label>Studio:</label>
+            <select name="studios">
+                <option>---</option>
+                {% for item in studios %}
+                    <option value="{{ item.id }}">{{ item.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="field">
+            <label>Genre:</label>
+            <select name="genre">
+                <option>---</option>
+                {% for item in genres %}
+                    <option value="{{ item.id }}">{{ item.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="field">
+            <input type="submit" class="button" value="Add new game">
+        </div>
+    </form>
+
+{% endblock %}

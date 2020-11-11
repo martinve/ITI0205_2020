@@ -1,0 +1,14 @@
+{
+    "name": "martin/switch-organizer",
+    "description": "A sample application for organizing Nintendo Switch game collection",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Verrev",
+            "email": "martin.verrev@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.1"
+    }
+}

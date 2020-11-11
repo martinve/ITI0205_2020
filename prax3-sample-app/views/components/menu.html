@@ -1,0 +1,14 @@
+<nav>
+    <ul>
+        <li><a href="index.php">Games</a></li>
+        <li><a href="#">Profile</a></li>
+    </ul>
+
+    <ul>
+        {% if(auth_user is empty) %}
+            <li><a href="login.php">Login</a></li>
+        {% else %}
+            <li><a href="logout.php">Logout</a></li>
+        {% endif %}
+    </ul>
+</nav>

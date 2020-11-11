@@ -23,9 +23,6 @@ function reset() {
 
 function save() {
 	console.log("Saving person");
-
-
-
 	localStorage.setItem('person', JSON.stringify(person));
 }
 
