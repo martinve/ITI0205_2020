@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteBase /ITI0205_2020/prax3-sample-app
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php [QSA,L]

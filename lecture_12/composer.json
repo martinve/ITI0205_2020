@@ -1,0 +1,13 @@
+{
+    "name": "martin/lecture_12",
+    "description": "Sample composer based project",
+    "authors": [
+        {
+            "name": "Martin Verrev",
+            "email": "martin.verrev@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.1"
+    }
+}

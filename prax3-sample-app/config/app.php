@@ -2,7 +2,7 @@
 
 //We check whether we are running the code locally or on live server
 
-if ('127.0.0.1' == $_SERVER['REMOTE_ADDR']) {
+if ('::1' == $_SERVER['REMOTE_ADDR'] || '127.0.0.1' == $_SERVER['REMOTE_ADDR']) {
     //Local server configuration. These are for local test database only so right now I do not care putting it up to Git,
     //Otherwise passwords should not be shared on Git
     define('DB_HOST', 'localhost');

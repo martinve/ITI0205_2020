@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <title>Fetch Example</title>
+    </head>
+    <body>
+        <h1>Fetch Example</h1>
+
+        <script>
+            
+            const API_URL = 'http://localhost:10000';
+
+            fetch(API_URL, {cors: 'no-cors'})
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Got response: " + data);
+                })
+                .catch(error => console.error())
+
+        </script>    
+
+    </body>
+</html>    
