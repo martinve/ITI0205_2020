@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Playing With Sockets</title>
+        <meta charset="utf-8"></head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <h1>Playing With Sockets</h1>
+
+        <!--
+        To avoid installing software we shall use it from CDN (Content delivery network)
+        -->
+
+        <div>
+            <div class="field">
+                <label>Nimi:</label>
+                <input type="text" name="nimi" value="Martin">
+            </div>
+            <div class="field">
+                <a onclick="submitName()">Lisa Nimi</a>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+
+        <script>
+            const socket = io("http://localhost:3000");
+
+            function submitName(evt) {
+
+                let data = {
+                    "name": document.getElementsByName("nimi")[0].value
+                };
+
+                socket.emit("say hello", JSON.stringify(data));
+
+                socket.on("hello-response", (msg) => {
+                    console.log("Received message: " + msg);
+                });
+
+
+            } 
+
+
+    
+
+           
+
+        </script>
+
+    </body>
+</html>

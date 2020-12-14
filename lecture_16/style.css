@@ -1,0 +1,34 @@
+body {  
+	font-family: Arial, serif;
+	color: #333;
+}
+
+
+a {
+	text-decoration: none;
+	color: #007e41;
+} 
+
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: magenta;
+}
+
+
+body script {
+    display: block;
+    font-family: monospace;
+	white-space: pre;
+	border: 1px solid #ddd;
+}
+
+
+label {
+	font-weight: bold;
+	display: block;
+}
+
+
+.field {
+	margin-bottom: .5em;
+}
